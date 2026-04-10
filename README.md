@@ -1,16 +1,106 @@
-# React + Vite
+🗞️ NewsBoard — Hacker News Reader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Hacker News Reader built with React + Vite + TailwindCSS that allows users to browse, search, bookmark, and track reading history of top Hacker News articles.
 
-Currently, two official plugins are available:
+🔗 Live Demo:
+https://newsboard-app.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Features
+📰 Feed Page
+View Top Hacker News stories
+Category filtering:
+Ask HN
+Show HN
+Jobs
+Others
+Search articles (with debounce)
+Auto refresh every 60 seconds
+Last updated timestamp
+Load more pagination
+Loading state
+Error handling
+📄 Article Detail Page
+View article details
+Bookmark articles
+Visual bookmark feedback
+Track reading time
+External article link
+🔖 Bookmarks
+Save articles
+Multi-select bookmarks
+Delete selected bookmarks
+Undo delete
+Sort bookmarks
+Persistent bookmarks (localStorage)
+🕒 Reading History
+Track reading time per article
+Display human readable time
+Clear history
+Persistent history (localStorage)
+🎨 UI Features
+Modern dark UI
+Responsive design
+Smooth hover animations
+Clean professional layout
+Navbar navigation
+🛠️ Tech Stack
+React (Vite)
+Tailwind CSS
+React Router DOM
+Hacker News API
+Netlify (Deployment)
+📦 Installation
 
-## React Compiler
+Clone the repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+git clone https://github.com/Ritik10x/newsboard-app.git
 
-## Expanding the ESLint configuration
+Navigate into project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+cd newsboard-app
+
+Install dependencies
+
+npm install
+
+Run development server
+
+npm run dev
+🔌 API Used
+
+Hacker News API
+
+https://hacker-news.firebaseio.com/v0/topstories.json
+📁 Project Structure
+src/
+ ├── components/
+ │    ├── Navbar.jsx
+ │    ├── ArticleCard.jsx
+ │
+ ├── pages/
+ │    ├── Feed.jsx
+ │    ├── ArticleDetail.jsx
+ │    ├── Bookmarks.jsx
+ │    ├── History.jsx
+ │
+ ├── context/
+ │    ├── NewsContext.jsx
+ │
+ ├── App.jsx
+ ├── main.jsx
+🌐 Deployment
+
+Deployed using Netlify
+
+npm run build
+
+Publish directory:
+
+dist
+📌 Future Improvements
+Infinite scrolling
+User authentication
+Bookmark folders
+Dark/light theme toggle
+Backend persistence
+
